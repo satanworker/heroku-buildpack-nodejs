@@ -50,7 +50,7 @@ trap 'handle_failure' ERR
 
 ### Check initial state
 
-[ -e "$BUILD_DIR/node_modules" ] && PREBUILD=true || PREBUILD=false
+[ -e "$BUILD_DIR/node_modules" ] && PREBUILD=false || PREBUILD=false
 
 ### Failures that should be caught immediately
 
